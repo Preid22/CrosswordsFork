@@ -7,38 +7,26 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+      <div className="header">
+        <img src="../src/eustace-400.webp" width="200"></img>
+        <div className="title">
+          <span>The New Jersey Times </span>
+          <span> Crossword</span>
+        </div>
+        <div className="settings">
+        <span>Settings</span>
+        </div>
+      </div>
+      <div className="clue">
+        <span>--Clues here--</span>
+      </div>
+      <div className="canvas">
+        <div className="crossword-grid">
+         A B C D E
+        </div>
+      </div>
+      </div>
+
   )
 }
 
